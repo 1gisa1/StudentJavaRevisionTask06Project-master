@@ -29,6 +29,22 @@ package by.itstep.javatraining.revision.task;
 
 public class Task02 {
     public static boolean task02(int number) {
+
+
+        for (int i = 0; i < number; i++) {
+            if (Math.pow(2, i) == number) {
+                return true;
+            }
+        }
+
         return false;
     }
+
+
 }
+
+
+
+
+
+

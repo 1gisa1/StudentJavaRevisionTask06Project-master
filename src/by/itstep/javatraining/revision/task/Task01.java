@@ -26,25 +26,27 @@ package by.itstep.javatraining.revision.task;
 
 public class Task01 {
     public static int task01(int number) {
-        return 0;
+
+        int minDel = 0;
+
+        if (number <= 1) {
+            return 0;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                minDel = i;
+                break;
+            }
+        }
+
+
+        if (minDel == 0) {
+            return number;
+        }
+
+
+        return minDel;
     }
-
-
-    public static void main(String[] args) {
-
-        int number = 15;
-
-
-
-
-
-
-    }
-
-
-
-
-
 
 }
 

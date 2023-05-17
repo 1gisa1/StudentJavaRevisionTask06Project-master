@@ -28,4 +28,22 @@ public class Task03 {
     public static String task03(int number) {
         return "?";
     }
+
+
+    public static void main(String[] args) {
+        int number = ;
+
+
+        int k = (int) Math.ceil(Math.log(number) / Math.log(2));
+        System.out.println(Math.pow(2, k-1));
+    }
 }
+
+
+
+
+
+
+
+
+
