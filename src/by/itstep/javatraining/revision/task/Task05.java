@@ -25,8 +25,63 @@ package by.itstep.javatraining.revision.task;
  */
 
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
 public class Task05 {
     public static int task05(long number) {
-        return 0;
+       /* if (number < 0) {
+            number *= -1;
+        }
+
+        if (number == 0) {
+            return 0;
+        }
+
+        List<Long> list = new ArrayList<>();
+        long sym = 0;
+        for (int i = 0; i < number; i++) {
+
+            sym = number % 10;
+            number /= 10;
+            list.add(sym);
+
+        }
+
+        list.sort(Comparator.reverseOrder());
+        long otvet = list.get(0);
+        System.out.println("ok");
+        return (int) otvet;*/
+        String numbers = String.valueOf(number);
+        int maxNum = 0;
+        for (int i = 0; i < numbers.length(); i++) {
+            int num2 = Character.getNumericValue(numbers.charAt(i));
+
+            if (num2 > maxNum){
+                maxNum = num2;
+            }
+        }
+        return maxNum;
     }
+
+    public static void main(String[] args) {
+
+
+        long num = 9_223_372_036_854_775_807L;
+
+        String numbers = String.valueOf(num);
+        int maxNum = 0;
+        for (int i = 0; i < numbers.length(); i++) {
+            int num2 = Character.getNumericValue(numbers.charAt(i));
+
+            if (num2 > maxNum){
+                maxNum = num2;
+            }
+        }
+        System.out.println(maxNum);
+
+    }
+
+
 }

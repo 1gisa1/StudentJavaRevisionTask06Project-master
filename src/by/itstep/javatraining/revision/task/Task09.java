@@ -33,6 +33,21 @@ package by.itstep.javatraining.revision.task;
 
 public class Task09 {
     public static int task09(long number) {
-        return 0;
+
+/*        int count = 0;
+        String digits = Long.toString(number);
+
+        for (int i = 1; i < digits.length() - 1; i++) {
+            int current = Character.getNumericValue(digits.charAt(i));
+            int prev = Character.getNumericValue(digits.charAt(i - 1));
+            int next = Character.getNumericValue(digits.charAt(i + 1));
+
+            if (current > prev && current > next) {
+                count++;
+            }
+        }
+
+        return count;*/
+return 0;
     }
 }
